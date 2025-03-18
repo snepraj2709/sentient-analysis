@@ -17,7 +17,7 @@ const generationConfig = {
   responseMimeType: 'text/plain',
 };
 
-export async function run(input) {
+export async function runSentienceResponse(input) {
   const chatSession = model.startChat({
     generationConfig,
     history: [

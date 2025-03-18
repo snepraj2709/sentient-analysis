@@ -2,7 +2,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
-import { run } from './sentient/sentientResponse';
+// import { runSentienceResponse } from './sentient/sentientResponse';
+import { runSantaResponse } from './sentient/santaResponse';
 
 function App() {
   const [messages, setMessages] = useState([
@@ -31,7 +32,8 @@ function App() {
       setMessages((prev) => [...prev, { text: userMessage, user: 'human' }]);
       setIsLoading(true);
       try {
-        const response = await run(input.trim());
+        // const response = await runSentienceResponse(input.trim());
+        const response = await runSantaResponse();
         setMessages((prev) => [...prev, { text: response, user: 'ai' }]);
       } catch (error) {
         console.error('Error:', error);
