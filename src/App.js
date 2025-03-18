@@ -45,6 +45,9 @@ function App() {
   return (
     <div className='App'>
       <div className='chat-container'>
+        <div className='chat-header'>
+          <h2>Sentient Analysis</h2>
+        </div>
         <div className='chat-messages'>
           {messages.map((message, index) => (
             <div key={index} className={`message ${message.user}`}>

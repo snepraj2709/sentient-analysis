@@ -6,6 +6,19 @@
   flex-direction: column;
 }
 
+.chat-header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #565869;
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .chat-container {
   flex: 1;
   max-width: 1000px;
@@ -99,4 +112,22 @@
 
 .chat-messages::-webkit-scrollbar-thumb:hover {
   background: #676980;
+}
+
+.chat-end{
+  
+}
+
+.chat-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #444654;
+  border-bottom: 1px solid #565869;
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
 }
