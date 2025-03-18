@@ -7,7 +7,7 @@ import { run } from './sentient/sentientResponse';
 function App() {
   const [messages, setMessages] = useState([
     {
-      text: 'Hello! I am your Sentient Analysis Agent, Please type your sentense to help me understand if its Positive Negative or Neutral?',
+      text: 'Hello! I am your Sentient Analysis Agent, Please type your sentense to help me understand if its Positive Negative or Neutral',
       user: 'ai',
     },
   ]);
